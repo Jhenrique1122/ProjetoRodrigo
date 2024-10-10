@@ -1,0 +1,81 @@
+/* App.css */
+body {
+  background-color: #ffffff;
+  color: #2ddf00;
+  margin: 0;
+  padding: 0px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+form {
+  background: #ffffff;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border:solid; 
+  border-color: #19258f;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label { 
+  color: #000000;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+input, textarea {
+  background-color: #cccaca ;
+  width: 92%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  border-radius: 4px; 
+ 
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #19258f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #7d89fd;
+ 
+}
+
+p {
+  margin-top: 10px;
+}
+
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-left: 220px;
+  width: 35px;
+}
+
+.message{
+  margin-left: 125px;
+    opacity: 1;
+    transition: opacity 1s ease-out; /* Transição de fade out */
+}
+  
+  .fade-out {
+    opacity: 0; /* Fade out */
+  }
