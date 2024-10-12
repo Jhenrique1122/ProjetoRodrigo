@@ -9,8 +9,8 @@ const transporter = nodemailer.createTransport({
   host: 'sandbox.smtp.mailtrap.io',
   port: 2525,
   auth: {
-    user: '593efaff96a40c',
-    pass: '58d7b7bc41a25e'
+    user: '049df24757f0a9',
+    pass: '9eccfa842d6ffe'
   }
 });
 
@@ -27,6 +27,7 @@ app.post('/send-email', async (req, res) => {
     });
     res.status(200).send({ message: 'Email sent successfully' });
   } catch (error) {
+    console.error('Error sending email:', error)
     res.status(500).send({ error: 'Failed to send email' });
   }
 });

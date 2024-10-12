@@ -59,7 +59,7 @@ const App = () => {
     }
   }, [responseMessage]);
 
- 
+
   return (
     <div className='dashboard'>
       <form onSubmit={handleSubmit}>
@@ -70,14 +70,19 @@ const App = () => {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        <button type="submit">Enviar</button>
+
+
+        <div className='button'>
+          <button type="submit">
+            <span className='button-text'>{loading ? 'Enviando...' : 'Enviar'} </span>
+          </button>
+          <div className='loader'>
+            {loading && <RotatingLinesVSD />}
+          </div>
+        </div>
+
       </form>
-      <div className='loader'>
-        {loading && (
-          <RotatingLinesVSD />
-        )
-        }
-      </div>
+
       <div className='message'>
         {message && <p>{message}</p>}
       </div>

@@ -1,7 +1,10 @@
 /* App.css */
 body {
-  background-color: #ffffff;
-  color: #2ddf00;
+  background-image: url('./image/backgroundImg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
   margin: 0;
   padding: 0px;
   font-family: Arial, sans-serif;
@@ -13,7 +16,7 @@ body {
 
 
 form {
-  background: #ffffff;
+  background: rgb(0, 0, 0, 0.7);
   padding: 20px;
   padding-left: 100px;
   padding-right: 100px;
@@ -24,7 +27,7 @@ form {
 }
 
 label { 
-  color: #000000;
+  color: #cccaca;
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
@@ -33,7 +36,7 @@ label {
 
 input, textarea {
   background-color: #cccaca ;
-  width: 92%;
+  width: 250px;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #000000;
@@ -41,8 +44,9 @@ input, textarea {
  
 }
 
-button {
-  width: 100%;
+
+button{
+  width: 270px;
   padding: 10px;
   background: #19258f;
   color: white;
@@ -50,25 +54,33 @@ button {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+
+}
+.button {
+  display: grid;
+  grid-template-columns: auto 0%; /* 1fr para o texto, auto para o loader */
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  padding: 0px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
 }
 
 button:hover {
   background: #7d89fd;
- 
+}
+
+.loader{
+  margin-left: 15px;
 }
 
 p {
   margin-top: 10px;
 }
 
-.loader{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  margin-left: 220px;
-  width: 35px;
-}
 
 .message{
   margin-left: 125px;
