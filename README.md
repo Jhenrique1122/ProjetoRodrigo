@@ -34,9 +34,9 @@ npm install
 npm run dev
 ```
 
-#Uso#
-#Abra o navegador e acesse o local host.
+#Uso#  
+#Abra o navegador e acesse o local host.  
 
-#Insira o email para qual você deseja enviar mensagem no formulário.
+#Insira o email para qual você deseja enviar mensagem no formulário.  
 
-#Verifique a caixa de entrada simulada no Mailtrap para ver o email enviado.
+#Verifique a caixa de entrada simulada no Mailtrap para ver o email enviado.  
