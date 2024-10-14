@@ -1,5 +1,5 @@
 #Projeto de Envio de Emails#  
-Este projeto é uma aplicação web para envio de emails usando Node.js no backend e React.js no frontend. A aplicação permite que os usuários enviem emails com uma mensagem personalizada.    
+Este projeto é uma aplicação web para envio de emails usando Node.js no backend e React.js no frontend. A aplicação permite que os usuários enviem emails.    
 
 Estrutura do Projeto  
 ##Backend: Node.js com Express e Nodemailer    
